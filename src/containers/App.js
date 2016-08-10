@@ -46,6 +46,7 @@ class App extends Component {
           <h1>Find me a hospital!</h1>
           {this.geoFindMe()}
           <Globe globe={this.state.globe}/>
+          <DisplayMap />
         </div>
         <Footer>2016 All Rights Reserved.</Footer>
     </div>
