@@ -32,11 +32,10 @@ class DisplayMap extends Component{
   }
 
 
-
-
   render(){
     console.log("this.props.globe", this.props.globe);
     console.log("Array to pass in: this.props.geo", this.props.geo);
+
     return(
       <div className="map">
           <button className="favorite">3 DISPLAY TO MAPS</button>
@@ -48,7 +47,7 @@ class DisplayMap extends Component{
          onGoogleApiLoaded={({map, maps}) => console.log(map, maps)}
                              yesIWantToUseGoogleMapApiInternals >
                              <PSMarker lat={40.7398909} lng={-73.989497} />
-                             <PSMarker lat={30.7398909} lng={-72.989497} />
+                             <PSMarker lat={this.props.globe.latitude} lng={this.props.globe.longitude} />
        </GoogleMap>
   </div>
     )
