@@ -40,7 +40,7 @@ class DisplayMap extends Component{
       <div className="map">
           <button className="favorite">3 DISPLAY TO MAPS</button>
         <GoogleMap bootstrapURLKeys={{
-        key: "AIzaSyBI7-TOCmscy28RdbmUuLBf7yYkz_kw_H4"
+        key: "YOUR_API_KEY"
         }}
          center={{lat: 40.7398909, lng: -73.989497}}
          zoom={12}
